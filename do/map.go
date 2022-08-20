@@ -1,8 +1,9 @@
 package do
 
 // Map function is a higher order function applying a given function f to each item in a given slice.
-//
 // It allocates a new slice to store mapped values.
+//
+// Internally, Map runs in parallel to speed up the mapping process.
 func Map[T any, E any](slice []T, f func(T) E) []E {
 	dst := make([]E, len(slice))
 	async(slice, dst, f)
