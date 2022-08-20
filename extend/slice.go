@@ -37,23 +37,14 @@ func (s ExtendedSlice[T]) MapWithIndex(f func(T, int) T) ExtendedSlice[T] {
 }
 
 // Each applies the given function f to each item in the slice.
-//
-// Each uses the slice as the destination slice,
-// thus replacing the original values in the slice with a new values according to the given function f.
-// This means that no additional memory is allocated.
-func (s ExtendedSlice[T]) Each(f func(T) T) ExtendedSlice[T] {
-	return do.Each(s, f)
+func (s ExtendedSlice[T]) Each(f func(T)) {
+	do.Each(s, f)
 }
 
 // EachWithIndex applies the given function f to each item in the slice.
-//
-// EachWithIndex uses the slice as the destination slice,
-// thus replacing the original values in the slice with a new values according to the given function f.
-// This means that no additional memory is allocated.
-//
 // Compared to Each, the f function expects an additional argument representing the index of an item from the slice.
-func (s ExtendedSlice[T]) EachWithIndex(f func(T, int) T) ExtendedSlice[T] {
-	return do.EachWithIndex(s, f)
+func (s ExtendedSlice[T]) EachWithIndex(f func(T, int)) {
+	do.EachWithIndex(s, f)
 }
 
 // All returns true if all items from the slice passed through the given function f return true.

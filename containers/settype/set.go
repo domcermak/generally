@@ -98,6 +98,11 @@ func (s Set[T]) Copy() Set[T] {
 	return FromSlice(s.Items())
 }
 
+// Each applies a given function f to each item in the set.
+func (s Set[T]) Each(f func(T)) {
+	extend.Slice(s.Items()).Each(f)
+}
+
 // Map copies the set items, applies the function f to each item
 // and returns the new set with the mapped values.
 func (s Set[T]) Map(f func(T) T) Set[T] {
