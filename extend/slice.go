@@ -1,8 +1,8 @@
 package extend
 
 import (
-	"domcermak/stl/do"
-	"domcermak/stl/is"
+	"github.com/domcermak/generally/do"
+	"github.com/domcermak/generally/is"
 )
 
 type ExtendedSlice[T any] []T

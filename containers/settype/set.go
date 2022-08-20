@@ -1,7 +1,7 @@
 package settype
 
 import (
-	"domcermak/stl/extend"
+	"github.com/domcermak/generally/extend"
 )
 
 type Set[T comparable] map[T]bool

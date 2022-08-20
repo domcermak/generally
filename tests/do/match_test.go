@@ -1,8 +1,9 @@
 package do
 
 import (
-	"domcermak/stl/do"
 	"testing"
+
+	"github.com/domcermak/generally/do"
 )
 
 func TestMatch(t *testing.T) {

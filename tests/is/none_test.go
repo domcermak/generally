@@ -3,7 +3,7 @@ package is
 import (
 	"testing"
 
-	"domcermak/stl/is"
+	"github.com/domcermak/generally/is"
 )
 
 func TestNone(t *testing.T) {

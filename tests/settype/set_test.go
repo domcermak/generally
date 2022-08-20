@@ -1,8 +1,9 @@
 package settype
 
 import (
-	"domcermak/stl/containers/settype"
 	"testing"
+
+	"github.com/domcermak/generally/containers/settype"
 )
 
 func TestContains_String(t *testing.T) {

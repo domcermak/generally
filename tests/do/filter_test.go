@@ -3,7 +3,7 @@ package do
 import (
 	"testing"
 
-	"domcermak/stl/do"
+	"github.com/domcermak/generally/do"
 )
 
 func TestFilter(t *testing.T) {

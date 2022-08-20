@@ -1,4 +1,4 @@
-module domcermak/stl
+module github.com/domcermak/generally
 
 go 1.18
 

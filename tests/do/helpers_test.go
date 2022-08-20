@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"domcermak/stl/do"
+	"github.com/domcermak/generally/do"
 )
 
 func TestProcessInBatches(t *testing.T) {

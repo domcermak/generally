@@ -4,7 +4,7 @@ import (
 	"testing"
 	"unicode"
 
-	"domcermak/stl/do"
+	"github.com/domcermak/generally/do"
 )
 
 func TestMap(t *testing.T) {
